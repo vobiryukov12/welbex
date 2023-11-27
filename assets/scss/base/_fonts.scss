@@ -1,0 +1,53 @@
+@font-face {
+  $font-name: "#{$font-family-custom}-Regular";
+  font-family: $font-family-custom;
+  font-weight: $font-weight-regular;
+  font-style: normal;
+  src: url("#{$font-path}/#{$font-name}.woff") format("woff"),
+       url("#{$font-path}/#{$font-name}.woff2") format("woff2");
+}
+
+@font-face {
+  $font-name: "#{$font-family-custom}-Medium";
+  font-family: $font-family-custom;
+  font-weight: $font-weight-medium;
+  font-style: normal;
+  src: url("#{$font-path}/#{$font-name}.woff") format("woff"),
+       url("#{$font-path}/#{$font-name}.woff2") format("woff2");
+}
+
+@font-face {
+    $font-name: "#{$font-family-custom}-Bold";
+    font-family: $font-family-custom;
+    font-weight: $font-weight-bold;
+    font-style: normal;
+    src: url("#{$font-path}/#{$font-name}.woff") format("woff"),
+         url("#{$font-path}/#{$font-name}.woff2") format("woff2");
+}
+
+@font-face {
+  $font-name: "#{$font-family-custom}-Black";
+  font-family: $font-family-custom;
+  font-weight: $font-weight-black;
+  font-style: normal;
+  src: url("#{$font-path}/#{$font-name}.woff") format("woff"),
+       url("#{$font-path}/#{$font-name}.woff2") format("woff2");
+}
+
+@font-face {
+  $font-name: "#{$font-family-second}-Light";
+  font-family: $font-family-second;
+  font-weight: $font-weight-light;
+  font-style: normal;
+  src: url("#{$font-path}/#{$font-name}.woff") format("woff"),
+       url("#{$font-path}/#{$font-name}.woff2") format("woff2");
+}
+
+@font-face {
+  $font-name: "#{$font-family-second}-Regular";
+  font-family: $font-family-second;
+  font-weight: $font-weight-regular;
+  font-style: normal;
+  src: url("#{$font-path}/#{$font-name}.woff") format("woff"),
+       url("#{$font-path}/#{$font-name}.woff2") format("woff2");
+}

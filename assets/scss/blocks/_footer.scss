@@ -1,0 +1,144 @@
+.footer {
+  &__row {
+    display: grid;
+    margin-bottom: rem(50px);
+
+    row-gap: rem(30px);
+
+    @media #{$screen-tablet} {
+      justify-content: space-between;
+      margin-bottom: rem(33px);
+
+      column-gap: rem(30px);
+
+      grid-template-columns: auto auto;
+    }
+
+    @media #{$screen-desktop} {
+      grid-template-columns: auto auto auto;
+    }
+  }
+
+  &__col {
+    @media #{$screen-desktop} {
+      &:last-child {
+        padding-left: rem(65px);
+      }
+    }
+  }
+
+  &__col:last-child &__title {
+    @media #{$screen-desktop} {
+      text-align: right;
+    }
+  }
+
+  &__col:nth-child(2) &__title {
+    @media #{$screen-tablet} {
+      text-align: right;
+    }
+
+    @media #{$screen-desktop} {
+      text-align: left;
+    }
+  }
+
+  &__col:nth-child(2) &__item {
+    @media #{$screen-tablet} {
+      text-align: right;
+    }
+
+    @media #{$screen-desktop} {
+      text-align: left;
+    }
+  }
+
+  &__item {
+    margin-bottom: rem(10px);
+
+    font-size: rem($font-size-normal);
+
+    @media #{$screen-tablet} {
+      font-size: rem($font-size-base);
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__nav &__item {
+    margin-bottom: 0;
+
+    &:nth-child(2) {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    &:nth-child(4) {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    @media #{$screen-tablet} {
+      &:nth-child(2) {
+        grid-column: 2;
+        grid-row: 1;
+      }
+
+      &:nth-child(4) {
+        grid-column: 2;
+        grid-row: 2;
+      }
+    }
+  }
+
+  &__nav &__list {
+    display: grid;
+
+    column-gap: rem(47px);
+
+    grid-template-columns: 100px 140px;
+    row-gap: rem(10px);
+
+    @media #{$screen-tablet} {
+      grid-template-columns: max-content max-content;
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(20px);
+
+    font-weight: $font-weight-bold;
+    font-size: rem($font-size-mini);
+    color: $mid-gray;
+    text-transform: uppercase;
+    letter-spacing: rem(0.6px);
+
+    @media #{$screen-tablet} {
+      font-size: rem($font-size-normal);
+      letter-spacing: rem(0.7px);
+    }
+  }
+
+  &__other-info {
+    font-size: rem($font-size-mini);
+    font-family: $font-family-montserrat;
+
+    @media #{$screen-tablet} {
+      text-align: center;
+    }
+
+    @media #{$screen-desktop} {
+      text-align: right;
+    }
+  }
+
+  &__copyright {
+    margin-bottom: rem(5px);
+  }
+
+  &__link {
+    text-decoration: underline;
+  }
+}

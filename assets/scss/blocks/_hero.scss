@@ -1,0 +1,92 @@
+.hero {
+  position: relative;
+
+  padding-top: rem(40px);
+  padding-bottom: rem(59px);
+  overflow: hidden;
+
+  background-image: url("/public/images/noise.png"), radial-gradient(304.35% 148.2% at 3.2% 3.49%, rgba(255, 246, 233, 0.10) 0%, rgba(26, 29, 35, 0.10) 26.62%, rgba(26, 29, 35, 0.10) 52.1%, rgba(26, 29, 35, 0.01) 70.17%, rgba(26, 29, 35, 0.00) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    backdrop-filter: blur(rem(7.5px));
+  }
+
+  @media #{$screen-tablet} {
+    padding-top: rem(94px);
+    padding-bottom: rem(69px);
+
+    background-image: none;
+    &::before {
+      content: none;
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: column;
+
+    gap: rem(45px);
+
+    @media #{$screen-tablet} {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  &__about {
+    @media #{$screen-tablet} {
+      width: rem(362px);
+    }
+  }
+
+  &__features {
+    @media #{$screen-tablet} {
+      width: rem(298px);
+      padding-top: 15px;
+    }
+  }
+
+  &__ball {
+    position: absolute;
+    z-index: -999;
+
+    @media #{$screen-tablet} {
+      display: none;
+    }
+
+    &-red {
+      &-medium {
+        bottom: 0;
+        left: rem(29px);
+      }
+
+      &-light-large {
+        bottom: rem(-6px);
+        left: rem(-55px);
+      }
+    }
+
+    &-purple {
+      &-small {
+        right: rem(-16px);
+        bottom: rem(169px);
+      }
+
+      &-light-medium {
+        right: rem(-197px);
+        bottom: rem(79px);
+      }
+    }
+  }
+}

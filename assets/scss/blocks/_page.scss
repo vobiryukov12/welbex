@@ -1,0 +1,67 @@
+.page {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &__header {
+    padding-top: rem(18px);
+    padding-bottom: rem(18px);
+
+    @media #{$screen-tablet} {
+      padding-top: rem(57px);
+      padding-bottom: 0;
+    }
+  }
+
+  &__content {
+    flex-grow: 1;
+  }
+
+  &__footer {
+    padding-top: 41px;
+    padding-bottom: 60px;
+
+    @media #{$screen-tablet} {
+      padding-top: 55px;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__ball {
+    position: absolute;
+    z-index: -999;
+
+    display: none;
+
+    @media #{$screen-tablet} {
+      display: block;
+
+      &-purple {
+        top: rem(-2px);
+        left: 60.2vw;
+
+        &-light-medium {
+          top: rem(-154px);
+          left: 41.8vw;
+        }
+      }
+
+      &-red {
+        top: rem(83px);
+        left: 36vw;
+
+        &-small {
+          top: rem(547px);
+          left: 59.1vw;
+        }
+
+        &-light-huge {
+          top: rem(251px);
+          left: rem(-102px);
+        }
+      }
+    }
+  }
+}

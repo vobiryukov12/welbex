@@ -1,0 +1,44 @@
+.nav {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: rem(16px);
+
+    @media #{$screen-tablet} {
+      gap: rem(30px);
+    }
+  }
+
+  &__item {
+    &:last-child {
+      display: none;
+    }
+
+    @media #{$screen-tablet} {
+      &:last-child {
+        display: block;
+      }
+    }
+  }
+
+  &__link {
+    font-weight: $font-weight-medium;
+    font-size: rem($font-size-mini);
+    text-transform: uppercase;
+
+    @media #{$screen-tablet} {
+      font-size: rem($font-size-base);
+      text-transform: none;
+    }
+
+    @media #{$screen-desktop} {
+      &:hover {
+        background-image: linear-gradient(to right, #fcb045 0%, #ff3f78 100%);
+        background-clip: text;
+
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+}

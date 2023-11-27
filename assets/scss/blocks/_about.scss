@@ -1,0 +1,32 @@
+.about {
+  &__title {
+    margin-bottom: rem(15px);
+
+    font-weight: $font-weight-regular;
+    font-size: rem($font-size-large);
+
+    @media #{$screen-tablet} {
+      margin-bottom: rem(30px);
+
+      font-size: rem($font-size-huge);
+    }
+  }
+
+  &__highlight {
+    display: block;
+
+    font-weight: $font-weight-black;
+
+    background-image: linear-gradient(to right, #fcb045, #ff3f78);
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__subtitle {
+    width: rem(275px);
+
+    font-size: $font-size-medium;
+    font-family: $font-family-montserrat;
+  }
+}

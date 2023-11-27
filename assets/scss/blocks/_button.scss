@@ -1,0 +1,48 @@
+.button {
+  $size-normal: 61px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  height: $size-normal;
+  padding: 0 rem(34px);
+
+  font-weight: $font-weight-medium;
+  font-size: rem($font-size-base);
+  color: $color-text;
+
+  border: 0;
+  cursor: pointer;
+
+  transition: background-color $transition-duration $transition-function;
+
+  user-select: none;
+
+  appearance: none;
+
+  &--disabled {
+    cursor: default;
+  }
+
+  &--covered#{&}--blue {
+    background-color: $color-button;
+
+    &:hover {
+      background-color: rgba($color-button, 0.8);
+    }
+
+    &:focus {
+      background-color: rgba($color-button, 0.8);
+    }
+  }
+
+  &--covered#{&}--disabled {
+    background-color: $mid-gray;
+
+    &:hover,
+    &:focus {
+      background-color: $mid-gray;
+    }
+  }
+}

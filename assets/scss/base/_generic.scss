@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+html {
+  font-size: 100%;
+  font-family: $font-family;
+  color: $color-text;
+
+  background-color: $color-background;
+}
+
+body {
+  font-weight: $font-weight-regular;
+  font-size: rem($font-size-base);
+  line-height: normal;
+}
+
+ul {
+  padding-left: 0;
+
+  list-style: none;
+}
+
+a {
+  color: $color-text;
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0;
+}

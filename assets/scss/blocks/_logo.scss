@@ -1,0 +1,16 @@
+.logo {
+  display: flex;
+  flex-direction: column;
+  width: rem(140px);
+
+  gap: rem(10px);
+
+  &__link {
+    line-height: 0;
+  }
+
+  &__img {
+    width: rem(140px);
+    height: rem(24px);
+  }
+}

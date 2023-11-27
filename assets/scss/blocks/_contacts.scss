@@ -1,0 +1,33 @@
+.contacts {
+  &__list {
+    display: flex;
+    align-items: center;
+
+    column-gap: rem(47px);
+  }
+
+  &__link {
+    font-weight: $font-weight-medium;
+  }
+
+  &--footer &__list {
+    flex-direction: column;
+    align-items: flex-start;
+
+    row-gap: rem(10px);
+
+    @media #{$screen-desktop} {
+      align-items: flex-end;
+
+      row-gap: rem(20px);
+    }
+  }
+
+  &__adress {
+    font-size: rem($font-size-normal);
+
+    @media #{$screen-tablet} {
+      font-size: rem($font-size-base);
+    }
+  }
+}

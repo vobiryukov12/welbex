@@ -1,0 +1,26 @@
+.icons {
+  &__list {
+    display: flex;
+
+    gap: rem(30px);
+  }
+
+  &__item {
+    width: rem(20px);
+    height: rem(20px);
+  }
+
+  &--footer &__list {
+    gap: rem(10px);
+  }
+
+  &--footer &__item {
+    width: rem(24px);
+    height: rem(24px);
+
+    @media #{$screen-tablet} {
+      width: rem(20px);
+      height: rem(20px);
+    }
+  }
+}

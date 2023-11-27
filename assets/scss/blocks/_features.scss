@@ -1,0 +1,134 @@
+.features {
+  &__list {
+    display: grid;
+
+    column-gap: rem(10px);
+
+    grid-template-columns: max-content auto;
+    row-gap: rem(14px);
+
+    @media #{$screen-tablet} {
+      justify-content: space-between;
+      margin-bottom: 61px;
+
+      row-gap: rem(30px);
+    }
+  }
+
+  &__item {
+    @media #{$screen-tablet} {
+      width: 135px;
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(20px);
+
+    font-weight: $font-weight-medium;
+    font-size: rem($font-size-medium);
+
+    @media #{$screen-tablet} {
+      margin-bottom: rem(40px);
+
+      text-align: right;
+    }
+  }
+
+  &__highlight {
+    font-weight: $font-weight-bold;
+
+    -webkit-background-clip: text;
+            background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    &--red {
+      background-image: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 160%);
+    }
+
+    &--yellow {
+      background-image: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 160%);
+    }
+
+    @media #{$screen-tablet} {
+      text-transform: uppercase;
+      letter-spacing: rem(0.9px);
+
+      &--red {
+        background-image: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 80%);
+      }
+    }
+  }
+
+  &__name {
+    display: none;
+
+    font-size: rem($font-size-small);
+    font-family: $font-family-montserrat;
+    text-transform: uppercase;
+    letter-spacing: rem(0.65px);
+
+    @media #{$screen-tablet} {
+      display: block;
+      margin-bottom: rem(6px);
+
+      font-weight: $font-weight-medium;
+      font-size: rem($font-size-medium);
+      font-family: $font-family;
+      letter-spacing: rem(0.9px);
+
+      @media #{$screen-tablet} {
+        text-align: right;
+      }
+    }
+
+    &--small-screens {
+      position: relative;
+
+      display: block;
+      padding-left: 15px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+
+        display: block;
+        width: 10px;
+        height: 1px;
+
+        background-image: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+        transform: translateY(-50%);;
+      }
+
+      @media #{$screen-tablet} {
+        display: none;
+      }
+    }
+  }
+
+  &__text {
+    display: none;
+
+    line-height: 1.25;
+    font-family: $font-family-montserrat;
+
+    @media #{$screen-tablet} {
+      text-align: right;
+    }
+
+    @media #{$screen-tablet} {
+      display: block;
+    }
+  }
+
+  &__button {
+    display: none;
+
+    @media #{$screen-tablet} {
+      display: block;
+      margin-left: auto;
+    }
+  }
+}
