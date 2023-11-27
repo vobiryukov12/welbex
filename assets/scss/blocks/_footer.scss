@@ -98,7 +98,7 @@
 
     column-gap: rem(47px);
 
-    grid-template-columns: 100px 140px;
+    grid-template-columns: rem(100px) rem(140px);
     row-gap: rem(10px);
 
     @media #{$screen-tablet} {

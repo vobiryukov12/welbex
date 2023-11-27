@@ -20,12 +20,12 @@
   }
 
   &__footer {
-    padding-top: 41px;
-    padding-bottom: 60px;
+    padding-top: rem(41px);
+    padding-bottom: rem(60px);
 
     @media #{$screen-tablet} {
-      padding-top: 55px;
-      padding-bottom: 20px;
+      padding-top: rem(55px);
+      padding-bottom: rem(20px);
     }
   }
 

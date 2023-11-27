@@ -9,7 +9,7 @@
 
     @media #{$screen-tablet} {
       justify-content: space-between;
-      margin-bottom: 61px;
+      margin-bottom: rem(61px);
 
       row-gap: rem(30px);
     }
@@ -17,7 +17,7 @@
 
   &__item {
     @media #{$screen-tablet} {
-      width: 135px;
+      width: rem(135px);
     }
   }
 
@@ -86,7 +86,7 @@
       position: relative;
 
       display: block;
-      padding-left: 15px;
+      padding-left: rem(15px);
 
       &::before {
         content: "";
@@ -95,8 +95,8 @@
         left: 0;
 
         display: block;
-        width: 10px;
-        height: 1px;
+        width: rem(10px);
+        height: rem(1px);
 
         background-image: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
         transform: translateY(-50%);;
