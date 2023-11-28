@@ -44,7 +44,7 @@ https://vobiryukov12.github.io/welbex-deploy/
 
 ### Структура:
 ### Исходники
-Иконки, стили, и скрипты находятся в /assets/. Включает поддиректории: fonts, icons, images, и scss.
+Иконки и стили находятся в /assets/. Включает поддиректории: fonts, icons, images, и scss.
 
 ### Готовые файлы 
 Исходники из /assets/ компилируются в /public/.
